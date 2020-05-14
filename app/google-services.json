@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "708214223166",
+    "firebase_url": "https://messenger-22f1f.firebaseio.com",
+    "project_id": "messenger-22f1f",
+    "storage_bucket": "messenger-22f1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708214223166:android:cae6375f941e8a3f6fbc6f",
+        "android_client_info": {
+          "package_name": "code.fortomorrow.messengerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708214223166-2gt8e9sjp2peteve7cb9op7718mjejav.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMrs5EbSI7KyEZIJRHLWmMv01cR3IR9Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708214223166-2gt8e9sjp2peteve7cb9op7718mjejav.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

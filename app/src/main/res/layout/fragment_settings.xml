@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".Fragments.SettingsFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cv_1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/cover_image_settings"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="fitXY"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/profile_image_settings"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/pp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_settings"
+                android:layout_below="@id/profile_image_settings"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_1"
+        android:id="@+id/primary_text"
+
+        android:text="Social Links:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primary_text"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="6dp"
+          android:background="@color/colorProfile"
+         >
+
+
+
+        <ImageView
+            android:id="@+id/set_facebook"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fb"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/set_instragram"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/instralogo"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="35dp"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/set_website"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/linkedin"
+            android:backgroundTint="@android:color/white"
+            android:scaleType="fitXY"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
