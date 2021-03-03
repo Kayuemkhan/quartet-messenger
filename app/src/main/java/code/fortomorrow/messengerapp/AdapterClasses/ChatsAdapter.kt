@@ -20,39 +20,18 @@ import kotlinx.android.synthetic.main.message_item_left.view.*
 import org.w3c.dom.Text
 
 
-class ChatsAdapter(
-    mContext:Context,
-    mChatlist: List<Chat>,
-    imageUrl:String
-): RecyclerView.Adapter<ChatsAdapter.ViewHolder?>()
+class ChatsAdapter(mContext:Context, mChatlist: List<Chat>, imageUrl:String): RecyclerView.Adapter<ChatsAdapter.ViewHolder?>()
 {
     private val mContext:Context
     private val mChatList:List<Chat>
     private val imageUrl:String
     var firebaseUser:FirebaseUser = FirebaseAuth.getInstance().currentUser!!
+
     init {
         this.mChatList = mChatlist
         this.mContext = mContext
         this.imageUrl = imageUrl
 
-    }
-
-
-    inner class ViewHolder(itemview:View):RecyclerView.ViewHolder(itemview)
-    {
-        var profile_image: CircleImageView? = null
-        var show_text_message:TextView? =null
-        var left_image_view:ImageView? =null
-        var text_seen: TextView? =null
-        var right_image_view:ImageView? = null
-
-        init {
-            profile_image= itemview.findViewById(R.id.profile_image)
-            show_text_message= itemview.findViewById(R.id.show_text_message)
-            left_image_view= itemview.findViewById(R.id.left_image_view)
-            text_seen= itemview.findViewById(R.id.text_seen)
-            right_image_view= itemview.findViewById(R.id.right_image_view)
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): ViewHolder
@@ -137,4 +116,21 @@ class ChatsAdapter(
             0
         }
     }
+    inner class ViewHolder(itemview:View):RecyclerView.ViewHolder(itemview)
+    {
+        var profile_image: CircleImageView? = null
+        var show_text_message:TextView? =null
+        var left_image_view:ImageView? =null
+        var text_seen: TextView? =null
+        var right_image_view:ImageView? = null
+
+        init {
+            profile_image= itemview.findViewById(R.id.profile_image)
+            show_text_message= itemview.findViewById(R.id.show_text_message)
+            left_image_view= itemview.findViewById(R.id.left_image_view)
+            text_seen= itemview.findViewById(R.id.text_seen)
+            right_image_view= itemview.findViewById(R.id.right_image_view)
+        }
+    }
+
 }
